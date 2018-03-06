@@ -20,7 +20,7 @@ The corresponding YAML will be written to standard out.
 
 # Installation
 
-Requires Python 3 and PyYAML or docker.
+Requires you to install Python3 and PyYAML locally or docker.
 
 For now, you can:
  - create a virtual environment (using requirements.txt), or install PyYAML some other way onto the
