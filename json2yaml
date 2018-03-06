@@ -4,7 +4,7 @@ import json
 import yaml
 import argparse
 from collections import OrderedDict
-from yaml import Loader, Dumper
+from yaml import Dumper
 
 # We should keep the order of the original json by using an OrderedDict and instructing
 # yaml.dump to use it
