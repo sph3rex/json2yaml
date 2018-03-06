@@ -6,6 +6,8 @@ import argparse
 from collections import OrderedDict
 from yaml import Loader, Dumper
 
+# We should keep the order of the original json by using an OrderedDict and instructing
+# yaml.dump to use it
 def dict_representer(dumper, data):
   return dumper.represent_dict(data.items())
 
