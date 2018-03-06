@@ -6,7 +6,7 @@ RUN apk add --no-cache \
 RUN mkdir /code
 WORKDIR /code
 
-RUN git clone https://github.com/redsymbol/json2yaml && \
+RUN git clone https://github.com/sph3rex/json2yaml && \
     pip install -r json2yaml/requirements.txt
 
 
