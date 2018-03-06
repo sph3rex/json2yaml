@@ -10,4 +10,4 @@ RUN git clone https://github.com/redsymbol/json2yaml && \
     pip install -r json2yaml/requirements.txt
 
 
-ENTRYPOINT '/code/json2yaml/json2yaml'
+ENTRYPOINT ["/code/json2yaml/json2yaml"]
