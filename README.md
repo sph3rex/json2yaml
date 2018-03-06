@@ -43,12 +43,9 @@ You can use it with:
 - docker and the provided dockerfile
 - virtual environment (using requirements.txt), or locally by installing PyYAML through pip.
 
-
 # Original author
-
 Aaron Maxwell - http://redsymbol.net
 
 # License
-
 Public domain
 
