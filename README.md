@@ -12,22 +12,39 @@ Or pass in a file parameter:
 
     json2yaml /path/to/baz.json
 
-You can also create a bash alias into your $HOME/.bash_aliases and run like above, or use directly the docker commands.
+You can also create a bash alias into your $HOME/.bash_aliases and run it like an alias, or use directly the docker commands.
 
 The corresponding YAML will be written to standard out.
 
+# yaml2json - convert YAML to JSON on command line
+
+A trivial script to convert YAML to JSON.
+
+# Usage
+
+Pipe to stdin:
+
+    echo 'Foo: 42' | yaml2json
+
+Or pass in a file parameter:
+
+    yaml2json /path/to/baz.yml
+
+You can also create a bash alias into your $HOME/.bash_aliases and run it like an alias, or use directly the docker commands.
+
+The corresponding JSON will be written to standard out.
 
 
 # Installation
 
 Requires you to install Python3 and PyYAML locally or docker.
 
-For now, you can:
- - create a virtual environment (using requirements.txt), or install PyYAML some other way onto the
-system.
-- use docker and the provided dockerfile
+You can use it with:
+- docker and the provided dockerfile
+- virtual environment (using requirements.txt), or locally by installing PyYAML through pip.
 
-# Author
+
+# Original author
 
 Aaron Maxwell - http://redsymbol.net
 
