@@ -20,14 +20,12 @@ The corresponding YAML will be written to standard out.
 
 # Installation
 
-Requires Python 3 and PyYAML.
+Requires Python 3 and PyYAML or docker.
 
-TODO: Make this easier for someone who's not already an expert in Python to install
-
-For now, you must either create a virtual environment (using
-requirements.txt), or install PyYAML some other way onto the
-system. Once that's done, you can simply invoke json2yaml on the
-command line.
+For now, you can:
+ - create a virtual environment (using requirements.txt), or install PyYAML some other way onto the
+system.
+- use docker and the provided dockerfile
 
 # Author
 
