@@ -12,7 +12,11 @@ Or pass in a file parameter:
 
     json2yaml /path/to/baz.json
 
+You can also create a bash alias into your $HOME/.bash_aliases and run like above, or use directly the docker commands.
+
 The corresponding YAML will be written to standard out.
+
+
 
 # Installation
 
