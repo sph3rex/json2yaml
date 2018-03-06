@@ -6,10 +6,18 @@ json2yaml() { # Convert json to yaml || programming
 	fi
 
 	ARGS="$@"
-	docker run \
-		--rm \
-		--interactive \
-		--user $(id -u):$(id -g) \
-		--workdir '/code/json2yaml' \
-		json2yaml "$ARGS"
+	if [[ -z $ARGS ]]; then
+		docker run \
+			--rm \
+			--user $(id -u):$(id -g) \
+			--interactive \
+			json2yaml
+	else
+		docker run \
+			--rm \
+			--user $(id -u):$(id -g) \
+			--workdir $PWD \
+			--volume $PWD:$PWD \
+			json2yaml "$ARGS"
+	fi
 }	
