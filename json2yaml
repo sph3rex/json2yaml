@@ -7,7 +7,7 @@ from collections import OrderedDict
 from yaml import Loader, Dumper
 
 def dict_representer(dumper, data):
-  return dumper.represent_dict(data.iteritems())
+  return dumper.represent_dict(data.items())
 
 Dumper.add_representer(OrderedDict, dict_representer)
 
