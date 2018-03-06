@@ -46,6 +46,9 @@ You can use it with:
 # Original author
 Aaron Maxwell - http://redsymbol.net
 
+# Took some inspiration from
+https://gist.github.com/oglops/c70fb69eef42d40bed06
+
 # License
 Public domain
 
